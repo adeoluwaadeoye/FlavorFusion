@@ -1,13 +1,97 @@
-body {
+
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin:1rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h3 {
+  line-height: 2.5rem;
+  margin: 2rem 0rem;
+}
+
+a {
+  color: rgb(56, 56, 56);
+}
+
+.row {
+  display: flex;
+  gap: 0.3rem !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+li {
+  margin: 0 1rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+input {
+  flex: 1 0 8rem;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .info {
+    margin-left: 1rem !important;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.footer-link {
+  color: white;
 }
