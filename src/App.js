@@ -16,10 +16,6 @@ function App() {
         <Search />
         <Category />
         <Pages />
-        <Footer>
-          <p>&copy; 2024 FlavorFusion. All rights reserved.</p>
-          <p>Developed by <a href="https://wa.me/+2348140898790" target="_blank" rel="noreferrer" className="footer-link">ADEOLUWA</a></p>
-        </Footer>
       </BrowserRouter>
     </div>
   );
@@ -42,23 +38,6 @@ const Nav = styled.div`
   }
 `;
 
-const Footer = styled.footer`
-  background-color: #333;
-  color: #fff;
-  padding: 2rem 0;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 0.5rem;
-  gap: 20px;
-    @media (max-width: 480px) {
-    flex-direction: column;
-    gap: 20px;
-  a{
-  color: white;
-}
-}
-`;
 
 
 export default App;
