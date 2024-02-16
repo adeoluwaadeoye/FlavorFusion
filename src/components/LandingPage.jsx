@@ -6,7 +6,7 @@ const LandingPage = () => {
     <Container>
       <HeroSection>
         <HeroContent>
-          <h1>Welcome to My Recipes</h1>
+          <h1>Welcome to FlavorFusion</h1>
           <p>Discover delicious recipes for every occasion!</p>
         </HeroContent>
         <HeroImage src={hero} alt="Hero Image" />
